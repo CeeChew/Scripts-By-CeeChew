@@ -1,0 +1,10 @@
+
+_G.Looping = true
+while _G.Looping do 
+    wait()
+args = {
+    [1] = "Mass",
+    [2] = math.huge
+}
+game:GetService("ReplicatedStorage").ChangePlayerStat:FireServer(unpack(args))
+end
